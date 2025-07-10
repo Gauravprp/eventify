@@ -17,11 +17,12 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-white shadow">
       <div className="max-w-7xl mx-auto px-4 py-5 flex items-center justify-between">
         {/* Logo */}
+        <Link to="/">
         <div className="text-xl font-bold text-purple-700 flex items-center space-x-1">
           <span className="text-black">⚡</span>
           <span>EventCraft</span>
         </div>
-
+</Link>
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-8">
           {navItems.map((item) => (
