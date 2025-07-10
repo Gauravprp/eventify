@@ -10,22 +10,38 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur shadow-md">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-purple-700">EventCraft</h1>
-        <nav className="space-x-6">
-          {navItems.map(item => (
+    <header className="sticky top-0 z-50 bg-white shadow">
+      <div className="max-w-7xl mx-auto px-4 py-5 flex items-center justify-between">
+        {/* Logo */}
+        <div className="text-xl font-bold text-purple-700 flex items-center space-x-1">
+          <span className="text-black">⚡</span>
+          <span>EventCraft</span>
+        </div>
+
+        {/* Navigation Links */}
+        <nav className="flex space-x-8">
+          {navItems.map((item) => (
             <Link
               key={item.path}
               to={item.path}
-              className={`text-sm font-medium hover:text-purple-600 transition ${
-                pathname === item.path ? 'text-purple-700 underline underline-offset-4' : 'text-gray-700'
+              className={`text-sm font-medium transition ${
+                pathname === item.path
+                  ? 'text-purple-700 underline underline-offset-4'
+                  : 'text-gray-700 hover:text-purple-600'
               }`}
             >
               {item.name}
             </Link>
           ))}
         </nav>
+
+        {/* Call Button */}
+        <a
+          href="tel:+919999999999"
+          className="bg-purple-600 text-white px-4 py-2 text-sm rounded-md font-medium hover:bg-purple-700 transition"
+        >
+          Call Us
+        </a>
       </div>
     </header>
   );

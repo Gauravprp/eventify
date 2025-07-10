@@ -1,7 +1,7 @@
 import Hero from '../components/Hero';
 import Services from '../components/Services';
 import Packages from '../components/Packages';
-import Checklist from '../components/Checklist';
+// import Checklist from '../components/Checklist';
 import Faq from '../components/Faq';
 import About from '../components/HomeAbout';
 
@@ -12,7 +12,7 @@ export default function Home() {
       <Services />
     <About />
       <Packages />
-      <Checklist />
+      {/* <Checklist /> */}
       <Faq />
     </>
   );
