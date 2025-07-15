@@ -5,6 +5,11 @@ import GalleryPage from './pages/GalleryPage';
 import ContactPage from './pages/ContactPage';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Wedding from './pages/services/Wedding';
+import Education from './pages/services/Education';
+import Spiritual from './pages/services/Spiritual';
+import Corporate from './pages/services/Corporate';
+import Surprise from './pages/services/Surprise';
 
 export default function RouterApp() {
   return (
@@ -17,7 +22,13 @@ export default function RouterApp() {
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/services/wedding" element={<Wedding />} />
+            <Route path="/services/surprise" element={<Surprise />} />
+            <Route path="/services/corporate" element={<Corporate />} />
+            <Route path="/services/spiritual" element={<Spiritual />} />
+            <Route path="/services/education" element={<Education />} />
           </Routes>
+
         </main>
         <Footer />
       </div>

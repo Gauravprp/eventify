@@ -10,7 +10,7 @@ export default function Gallery() {
   return (
     <div className="bg-white">
       {/* Hero Banner */}
-      <section className="bg-[url('/assets/gallery-hero.jpg')] bg-cover bg-center h-[60vh] flex items-center justify-center">
+      <section className="bg-[url('https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center h-[60vh] flex items-center justify-center">
         <div className="bg-black bg-opacity-60 w-full h-full flex items-center justify-center">
           <h1 className="text-5xl text-white font-bold text-center px-4">Gallery of Unforgettable Moments</h1>
         </div>

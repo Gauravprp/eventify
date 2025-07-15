@@ -5,7 +5,7 @@ export default function ServicesPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-    <section className="bg-[url('/assets/services-hero.jpg')] bg-cover bg-center h-[60vh] flex items-center justify-center">
+    <section className="bg-[url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center h-[60vh] flex items-center justify-center">
   <div className="bg-black bg-opacity-60 w-full h-full flex items-center justify-center">
     <div className="text-center px-4">
       <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">Explore Our Expert Event Services</h1>
